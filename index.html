@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Money Manager App</title>
+</head>
+<body>
+    <div>
+        <h1>Money Manager App</h1>
+    </div>
+    <div id="container">
+        <label for="expense">Expense</label><br>
+        <input type="text" name="expense" id="expense"></input><br>
+        <label for="date">Date</label><br>
+        <input type="date" name="date" id="date"></input><br>
+        <label for="amount">Amount</label><br>
+        <input type="number" step="any" min="0.01" name="amount" id="amount"></input><br><br>
+        <button type="submit" value="Submit" onclick="getData()">Submit</button>
+        <br>
+        <br>
+        <button onclick="orderDate()">Order By Date</button>
+        <br>
+        <br>
+        <table id="expenseTable">
+            <tr>
+                <th>Expense</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>No Expense Yet</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Expense Tracker
+Inputs:
+    Name  
+    Date
+    Amount
+Button to Add 
+Tale to view -->
